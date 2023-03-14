@@ -1,0 +1,107 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: aquamarine;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+h1 {
+    /* text-align: center; */
+}
+
+p {
+    /* text-align: center; */
+}
+
+.img {
+    background-image: url(assets/imagem3.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1440px;
+    height: 650px;
+    align-items: center;
+}
+
+/* .width-img {
+    width: 100%;
+    max-width: 1440px;
+    height: 650px;
+    
+} */
+
+@media screen and (min-device-width: 414px) and (max-device-width: 896px) { 
+
+    /* IPHONE XR */
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    p {
+      color: red;  
+    }
+
+    .img {
+        background-image: url(assets/phone1.jpg);
+        width: 100%;
+        height: 750px;
+        background-repeat: no-repeat;
+
+    }
+
+    /* .width-img {
+        width: 100%;
+        max-width: 1440px;
+        height: 650px;
+        
+    } */
+    
+}
+
+
+@media screen and (min-device-width: 820PX) and (max-device-width: 1180px) { 
+
+    /* IPAD AIR */
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        /* margin: 2px; */
+    }
+
+    p {
+        margin: 5px;
+        color: blue;
+    }
+
+    .img {
+        background-image: url(assets/ipad1.jpg);
+        width: 100%;
+        height: 1055px;
+        background-repeat: no-repeat;
+
+    }
+
+    /* .width-img {
+        width: 100%;
+        max-width: 1440px;
+        height: 650px;
+        
+    } */
+    
+}
